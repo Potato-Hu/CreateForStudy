@@ -1,0 +1,120 @@
+<html>
+    <title>Title of mypage2</title>
+    <body>
+        <h1 align="center">You just click into mypage2</h1>
+        <!插入图片>
+        <br />
+        <img
+            border="0"
+            src="C:\Users\41881\Pictures\Saved Pictures\屏幕截图 2021-09-02 212003.png"
+            height="400"
+        />
+
+        <!插入非本地图片>
+        <br />
+        <img
+            border="0"
+            src="https://www.baidu.com/img/PC_880906d2a4ad95f5fafb2e540c5cdad7.png"
+            height="100"
+        />
+
+        <!创建表格>
+        <h3>2 rows 2 colums:</h3>
+        <table border="1">
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+        <br />
+
+        <!创建无序表>
+        <h3>无序表:</h3>
+        <ul>
+            <li>Coffee</li>
+            <li>Tee</li>
+            <li>Sabrina</li>
+            <ul>
+                <li>嵌套</li>
+            </ul>
+        </ul>
+
+        <!创建有序表>
+        <h3>有序表:</h3>
+        <ol>
+            <li>Coffee</li>
+            <li>Tee</li>
+            <li>Sabrina</li>
+        </ol>
+
+        <!表单,用来接收用户输入:如用户名密码>
+        <form>
+            user ID:
+            <input type="text" name="ID" placeholder="enter your ID" />
+            <br />
+            password:
+            <input type="text" name="passwd" placeholder="enter your password" />
+        </form>
+
+        <!复选框,用来做(多项)选择>
+        <form>
+            I have:<br />
+            bike<input type="checkbox" name="Bike" /> car<input type="checkbox" name="Car" />
+            house<input type="checkbox" name="House" />
+        </form>
+
+        <!单选,用来做(单项)选择>
+        <form>
+            我是:<br />
+            男的:<input type="radio" name="Sex" value="male" /> 女的:<input
+                type="radio"
+                name="Sex"
+                value="female"
+            />
+            如果不选时的默认值:<input type="radio" checked name="Sex" value="default" />
+        </form>
+
+        <!下拉选项框>
+        <form>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="benz" selected>Benz</option>
+                <option value="audi">Audi</option>
+                <option value="空值"></option>
+                <option value="bmw">BMW</option>
+            </select>
+        </form>
+
+        <!文本框,留言板>
+        <h2 align="center">Say something here:</h2>
+        <textarea rows="10" cols="30">
+哦吼吼哈哈
+</textarea
+        >
+        <br />
+
+        <!按键按钮,比如提交键>
+        <form>
+            <input type="button" value="按钮" />
+        </form>
+        <br />
+        <form name="input" action="点提交后跳转的页面.asp" method="get">
+            <input type="submit" value="提交" />
+        </form>
+        <br />
+
+        <!带标题边框>
+        <fieldset>
+            <legend>Health info:</legend>
+            <form name="input" action="AfterClickSubmit.asp" method="get">
+                Height<input type="text" size="3" /> Weight<input type="text" size="3" />
+                <input type="submit" value="Submit" />
+            </form>
+        </fieldset>
+        <br />
+    </body>
+</html>
